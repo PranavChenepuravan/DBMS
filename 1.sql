@@ -1,0 +1,12 @@
+create database student11;
+use student11;
+create table details(id int,name varchar(10),address varchar(20),mathematics int,physics int,computer_science int);
+insert into details value(321,"fathima","muttanchery",150,150,150);
+insert into details value(322,"hani","kozhikode",149,139,109);
+insert into details value(323,"akash","kozhikode",190,198,98);
+insert into details value(324,"ajin","peruvayal",100,101,110);
+insert into details value(325,"fathu","madavoor",100,100,100);
+select * from details;
+select id,name from details;
+select id,name from details where mathematics+physics+computer_science>350;
+select name from details where address="kozhikode";
