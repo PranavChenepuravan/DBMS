@@ -1,0 +1,12 @@
+create database college;
+use college;
+create table courses(coursenumber int,PRIMARY KEY(coursenumber),coursename varchar(20));
+insert into courses values(1 , "MCA");
+insert into courses values(2, "Mech");
+insert into courses values(3, "EEE");
+insert into courses values(4 , "MA");
+select * from courses;
+create table faculties(f_no int primary key,f_name varchar(20),coursenumber int  references courses(coursenumber)); 
+insert into faculties values(101,"Akash",1);
+insert into faculties values(102,"Sreerag",3);
+select * from faculties;
